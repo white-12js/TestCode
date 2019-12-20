@@ -6,7 +6,7 @@ import redis.clients.jedis.Jedis;
 public class RedisSave {
     @Test
     public void save(){
-        Jedis jedis = new Jedis("localhost");
+//        Jedis jedis = new Jedis("localhost");
 //        SFP  CSB
 //        SFP  CSB
 //        SFP  CSB
@@ -28,7 +28,7 @@ public class RedisSave {
 
 
 
-        jedis.del("1","2","3","youzi");
-
+//        jedis.del("1","2","3","youzi");
+        System.out.println("你好");
     }
 }

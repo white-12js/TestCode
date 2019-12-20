@@ -13,10 +13,15 @@ public class CategoryServiceImpl implements CategoryService{
 	@Autowired
 	CategoryMapper categoryMapper;
 	
-	
+	//查看全部的数据
+	@Override
 	public List<Category> list(){
 		return categoryMapper.list();
 	}
 
+	@Override
+	public int login(String id,String password) {
+		return categoryMapper.login(id,password);
+	}
 
 }
